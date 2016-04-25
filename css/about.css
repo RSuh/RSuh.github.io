@@ -1,0 +1,15 @@
+#introduction_title_div {
+  text-align: center;
+}
+
+#about {
+  text-transform: uppercase;
+}
+
+#interests {
+  text-transform: uppercase;
+}
+
+#interest_ul {
+  margin-top: 4%;
+}

@@ -1,0 +1,124 @@
+/* Font Styles */
+@font-face {
+  font-family: "Brandon Text Regular";
+  src: url(../fonts/brandontextregular.otf);
+}
+
+@font-face {
+  font-family: "Brandon Text Medium";
+  src: url(../fonts/brandontextmedium.otf);
+}
+
+@font-face {
+  font-family: "Brandon Text Bold";
+  src: url(../fonts/brandontextbold.otf);
+}
+
+/* End Font Styles */
+
+/* Generic styles */
+h1 {
+  font-family: "Brandon Text Regular";
+  color: #393E46;
+  font-size: 28px;
+}
+
+h2 {
+  font-family: "Brandon Text Medium";
+  color: #393E46;
+  font-size: 22px;
+}
+
+p {
+  font-family: "Brandon Text Regular";
+  color: #757575;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+li {
+  font-family: "Brandon Text Regular";
+  color: #757575;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+ul {
+  padding-left: 1.5em;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0 auto;
+  text-align: center;
+  padding-left: 0px !important;
+}
+
+nav ul li {
+  font-family: "Brandon Text Medium";
+  display: inline-block;
+  padding: 0 0.8em 0 0.8em;
+  text-transform: uppercase;
+}
+
+footer section {
+  font-family: "Brandon Text Regular";
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #393E46;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Color Highlights */
+span.highlighted {
+  color: #2990EA;
+}
+
+/* ID Specific styles*/
+
+#emoji_div {
+  text-align: center;
+  margin-top: 4%;
+}
+
+#emoji_img {
+  height: 180px;
+  width: 180px;
+}
+
+#nameTitle_div {
+  text-align: center;
+}
+
+#nameTitle {
+  font-size: 48px;
+  margin-top: 3%;
+}
+
+#hr {
+  width: 49%;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+
+#navigation {
+  margin-top: 1.5%;
+}
+
+.site-footer {
+  margin-top: 2em;
+  height: 110px;
+  background-color: #F5F5F5;
+  padding: 0.1em 0;
+}
+
+#inner {
+  text-align: center;
+}
+
+#copyright {
+  margin-top: 2em;
+}

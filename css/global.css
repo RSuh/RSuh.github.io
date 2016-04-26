@@ -29,6 +29,12 @@ h2 {
   font-size: 22px;
 }
 
+h3 {
+  font-family: "Brandon Text Medium";
+  color: #393E46;
+  font-size: 18px;
+}
+
 p {
   font-family: "Brandon Text Regular";
   color: #757575;

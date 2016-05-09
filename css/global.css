@@ -1,3 +1,8 @@
+/* Background Image */
+html, body {
+  background-image: url('../images/backgroundShapes.svg');
+}
+
 /* Font Styles */
 @font-face {
   font-family: "Brandon Text Regular";
@@ -74,7 +79,27 @@ footer section {
   color: #393E46;
 }
 
+span:visited {
+  text-decoration: none;
+}
+
+span:active {
+  text-decoration: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
 a:hover {
+  text-decoration: none;
+}
+
+a:active {
   text-decoration: none;
 }
 
@@ -119,6 +144,7 @@ span.highlighted {
   height: 110px;
   background-color: #F5F5F5;
   padding: 0.1em 0;
+  bottom: 0;
 }
 
 #inner {

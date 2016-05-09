@@ -1,0 +1,17 @@
+#my_experience_title {
+  text-align: center;
+}
+
+#coop {
+  text-transform: uppercase;
+}
+
+#amex {
+  /*display: inline-block;*/
+  /*margin-top: 10px;*/
+  margin-right: 3%;
+}
+
+#date {
+  /*display: inline-block;*/
+}

@@ -6,17 +6,17 @@ html, body {
 /* Font Styles */
 @font-face {
   font-family: "Brandon Text Regular";
-  src: url(../fonts/brandontextregular.otf);
+  src: url(../fonts/brandontextregular.ttf);
 }
 
 @font-face {
   font-family: "Brandon Text Medium";
-  src: url(../fonts/brandontextmedium.otf);
+  src: url(../fonts/brandontextmedium.ttf);
 }
 
 @font-face {
   font-family: "Brandon Text Bold";
-  src: url(../fonts/brandontextbold.otf);
+  src: url(../fonts/brandontextbold.ttf);
 }
 
 /* End Font Styles */
@@ -153,4 +153,22 @@ span.highlighted {
 
 #copyright {
   margin-top: 2em;
+}
+
+@media only screen and (max-width: 750px) {
+  #hr {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  #hr {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #hr {
+    width: 85%;
+  }
 }

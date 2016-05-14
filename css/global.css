@@ -40,6 +40,12 @@ h3 {
   font-size: 18px;
 }
 
+h5 {
+  font-family: "Brandon Text Medium";
+  color: #393E46;
+  font-size: 16px;
+}
+
 p {
   font-family: "Brandon Text Regular";
   color: #757575;
@@ -169,6 +175,6 @@ span.highlighted {
 
 @media only screen and (max-width: 500px) {
   #hr {
-    width: 85%;
+    width: 85  %;
   }
 }

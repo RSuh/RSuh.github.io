@@ -13,7 +13,8 @@
     <link href="css/global.css" rel="stylesheet">
     <!-- About -->
     <link href="css/about.css" rel="stylesheet">
-
+    <!-- Fakeloader -->
+    <link href="css/fakeLoader.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -21,7 +22,9 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
+
   <body>
+    <!-- <div id="fakeLoader"></div> -->
     <!-- Emoji Section -->
     <div class="container-fluid">
       <div class="row">
@@ -46,7 +49,7 @@
       <hr id="hr">
       <ul>
         <li>
-          <a href="about.html"><span class="highlighted">About</span></a>
+          <a href="index.html"><span class="highlighted" id="index">About</span></a>
         </li>
         <li>
           <a href="project.html"><span class="highlighted">Projects</span></a>
@@ -118,8 +121,25 @@
     </footer>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <!-- Fake loader -->
+    <script src="js/fakeLoader.min.js"></script>
+
+    <script type="text/javascript">
+      $("#fakeLoader").fakeLoader({
+          timeToHide:2000, //Time in milliseconds for fakeLoader disappear
+          zIndex:999, // Default zIndex
+          spinner:"spinner7",//Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7'
+          bgColor:"#2990ea", //Hex, RGB or RGBA colors
+          //imagePath:"yourPath/customizedImage.gif" //If you want can you insert your custom image
+      });
+
+      $("#index").click(function() {
+        console.log("Hello");
+        $('#fakeLoader').removeAttr('id');
+      });
+    </script>
   </body>
 </html>

@@ -15,16 +15,10 @@
     <link href="css/about.css" rel="stylesheet">
     <!-- Fakeloader -->
     <link href="css/fakeLoader.css" rel="stylesheet">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
   </head>
 
   <body>
-    <!-- <div id="fakeLoader"></div> -->
+    <div id="fakeLoader"></div>
     <!-- Emoji Section -->
     <div class="container-fluid">
       <div class="row">
@@ -67,7 +61,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-lg-6 col-lg-offset-3" id="introduction_title_div">
-          <h1 id="introduction_title">Hi! My name is Regi</h1>
+          <h1 id="introduction_title">Hi! My name is Regi.</h1>
         </div>
       </div>
     </div>
@@ -77,9 +71,7 @@
       <div class="row">
         <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1" id="about_div">
           <h2 id="about">About Me</h2>
-          <p id="introduction_text">I'm a 3rd year undergraduate <a href="https://cs.uwaterloo.ca/" target="_blank"><span class="highlighted">Computer Science</a></span> student at the University of Waterloo. I love experimenting with new technologies, and I get excited about designing, and building amazing products.</p>
-          <br>
-          <!-- <p>Click <a href="#" target="_blank"><span class="highlighted">here</span></a> to view my resume.</p> -->
+          <p id="introduction_text">I'm a 3rd year undergraduate <a href="https://cs.uwaterloo.ca/" target="_blank"><span class="highlighted">Computer Science</a></span> student at the University of Waterloo. I love experimenting with new technologies, and I get excited about designing and building amazing products.</p>
         </div>
       </div>
     </div>
@@ -91,11 +83,11 @@
           <h2 id="interests">Interests</h2>
           <p id="interests_text">Here is a small list of things that I am currently learning, and also some things that I would love to learn more about.</p>
           <ul id="interest_ul">
+            <li>AI + ML</li>
+            <li>Cryptocurrencies</li>
             <li>UX + UI</li>
             <li>Product Design</li>
             <li>Vector based Illustrations</li>
-            <li>AI + ML</li>
-            <li>Cryptocurrencies</li>
           </ul>
         </div>
       </div>
@@ -128,11 +120,10 @@
 
     <script type="text/javascript">
       $("#fakeLoader").fakeLoader({
-          timeToHide:2000, //Time in milliseconds for fakeLoader disappear
-          zIndex:999, // Default zIndex
-          spinner:"spinner7",//Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7'
-          bgColor:"#2990ea", //Hex, RGB or RGBA colors
-          //imagePath:"yourPath/customizedImage.gif" //If you want can you insert your custom image
+        timeToHide:1000, //Time in milliseconds for fakeLoader disappear
+        zIndex:999, // Default zIndex
+        spinner:"spinner7",//Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7'
+        bgColor:"#4E78F1", //Hex, RGB or RGBA colors
       });
 
       $("#index").click(function() {

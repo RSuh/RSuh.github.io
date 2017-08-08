@@ -13,15 +13,11 @@
     <link href="css/global.css" rel="stylesheet">
     <!-- Project -->
     <link href="css/project.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <!-- Fakeloader -->
+    <link href="css/fakeLoader.css" rel="stylesheet">
   </head>
   <body>
+    <div id="fakeLoader"></div>
     <!-- Emoji Section -->
     <div class="container-fluid">
       <div class="row">
@@ -52,7 +48,7 @@
           <a href="project.html"><span class="highlighted">Projects</span></a>
         </li>
         <li>
-          <a href="experience.html"><span class="highlighted">Experience</span></a>
+          <a href="experience.html"><span class="highlighted" id="experience">Experience</span></a>
         </li>
       </ul>
       <hr id="hr">
@@ -75,25 +71,33 @@
       <div class="row">
         <div class="col-lg-6 col-lg-offset-3" id="software_div">
           <h2 id="software">Software</h2>
+          <!-- Loobot -->
+          <h3 id="testBot_title"><span class="highlighted">Loobot</span></h3>
+          <p>
+            A Facebook messenger bot built using Node.js for the backend. It replies back when a user types in certain phrases. Deployed the app using Heroku.
+            <br />
+            Planning to integrate the bot with the University of Waterloo Open Data API, and wit.ai for natural language processing.
+          </p>
+
           <!-- Waterloo Courses -->
           <h3 id="wcourses_title"><span class="highlighted">Waterloo Courses</span></h3>
-          <p>Rebuilt the way students find out information about courses.</p>
+          <p>
+            Reimagined and built the schedule of classes generator for students using the University of Waterloo Open Data API, and React.
+          </p>
 
           <!-- Tasky -->
           <h3 id="tasky_title"><span class="highlighted">Tasky</span></h3>
-          <p>Tasky is a simple and beautiful to-do app that I built at <a href="https://www.makeschool.com/" target="_blank"><span class="highlighted">Make School</span></a>'s 2015 summer academy. It is built using Swift and utilizes <a href="https://realm.io/" target="_blank"><span class="highlighted">Realm</span></a>, a local mobile database. Currently it is popular in the UK with 3000+ downloads globally. <br>Check it out on the Apple app store <a href="http://tasky.xyz/" target="_blank"><span class="highlighted">here</span></a>.</p>
+          <p>
+            Tasky is a simple and beautiful to-do app that I built at <a href="https://www.makeschool.com/" target="_blank"><span class="highlighted">Make School</span></a>'s 2015 summer academy. It is built using Swift, Objective-C and utilizes <a href="https://realm.io/" target="_blank"><span class="highlighted">Realm</span></a>, a local database. It received 4000+ downloads worldwide organically in just 4 months of release.
+          </p>
 
           <!-- Instagram -->
           <h3 id="instagram_title"><span class="highlighted">Instagram Clone</span></h3>
-          <p>A instagram clone built using Ruby on Rails. I built the CRUD functionality from scratch and had exposure using the devise gem, a popular ruby gem for authentication features.</p>
-
-          <!-- Facebook Bot -->
-          <h3 id="testBot_title"><span class="highlighted">Facebook Bot</span></h3>
-          <p>A facebook bot built using Node.js. It replies back when a user types in certain phrases. Deployed using Heroku</p>
+          <p>A instagram clone built using Ruby on Rails. I built the CRUD functionality from scratch and integrated the devise gem, a popular ruby gem for authentication features.</p>
 
           <!-- Personal Website -->
           <h3 id="personalSite_title"><span class="highlighted">Personal Website</span></h3>
-          <p>I rebuilt the <a href="https://github.com/sethlilly/vapor" target="_blank"><span class="highlighted">Vapor</span></a> theme from scratch with HTML and CSS. The theme has an extra focus on design, typography, and simplicity, with some small tweaks to the <a href="#"><span class="highlighted">Vapor</span></a> theme - including the custom background and portrait illustration.</p>
+          <p>I rebuilt the <a href="https://github.com/sethlilly/vapor" target="_blank"><span class="highlighted">Vapor</span></a> theme from scratch with HTML/CSS, Bootstrap, and some Javascript. The theme has an extra focus on design, typography, and simplicity, with some small tweaks to the <a href="#"><span class="highlighted">Vapor</span></a> theme - including the custom background and portrait illustration.</p>
           <br>
           <p>Check out my software projects on my <a href="https://github.com/RSuh" target="_blank"><span class="highlighted">Github</span></a>.</p>
         </div>
@@ -107,9 +111,11 @@
           <h2 id="design">Design</h2>
           <!-- Design Project 1 Emoji Illustrations -->
           <h3 id="emoji_illustrations"><span class="highlighted">Emoji Illustrations</span></h3>
-          <p>One of my emoji illustrations can be seen at the top of this website. My first real exposure to vector drawings with Sketch 3.</p>
-          <br>
-          <!-- <p>Take a look at all my design projects on <a href="#"><span class="highlighted">Behance</span></a>.</p> -->
+          <p>
+            I created the emoji illustration which can be seen at the top of this website.
+            <br />
+            In addition, I experimented with using shapes to create different abstract backgrounds.
+          </p>
         </div>
       </div>
     </div>
@@ -127,5 +133,21 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+
+    <!-- Fake loader -->
+    <script src="js/fakeLoader.min.js"></script>
+
+    <script type="text/javascript">
+      $("#fakeLoader").fakeLoader({
+        timeToHide:1000, //Time in milliseconds for fakeLoader disappear
+        zIndex:999, // Default zIndex
+        spinner:"spinner7",//Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7'
+        bgColor:"#4E78F1", //Hex, RGB or RGBA colors
+      });
+
+      $("#experience").click(function() {
+        $('#fakeLoader').removeAttr('id');
+      });
+    </script>
   </body>
 </html>

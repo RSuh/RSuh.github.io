@@ -24,39 +24,45 @@ html, body {
 /* Generic styles */
 h1 {
   font-family: "Brandon Text Regular";
-  color: #393E46;
-  font-size: 28px;
+  color: #1C232B;
+  font-size: 32px;
 }
 
 h2 {
   font-family: "Brandon Text Medium";
-  color: #393E46;
-  font-size: 22px;
+  color: #1C232B;
+  font-size: 24px;
 }
 
 h3 {
   font-family: "Brandon Text Medium";
-  color: #393E46;
-  font-size: 18px;
+  color: #1C232B;
+  font-size: 20px;
+}
+
+h4 {
+  font-family: "Brandon Text Medium";
+  color: #1C232B;
+  font-size: 16px;
 }
 
 h5 {
   font-family: "Brandon Text Medium";
-  color: #393E46;
-  font-size: 16px;
+  color: #1C232B;
+  font-size: 14px;
 }
 
 p {
   font-family: "Brandon Text Regular";
-  color: #757575;
-  font-size: 18px;
+  color: #6F7881;
+  font-size: 16px;
   line-height: 28px;
 }
 
 li {
   font-family: "Brandon Text Regular";
-  color: #757575;
-  font-size: 18px;
+  color: #6F7881;
+  font-size: 16px;
   line-height: 28px;
 }
 
@@ -82,7 +88,7 @@ footer section {
   font-family: "Brandon Text Regular";
   font-size: 16px;
   text-transform: uppercase;
-  color: #393E46;
+  color: #1C232B;
 }
 
 span:visited {
@@ -111,7 +117,15 @@ a:active {
 
 /* Color Highlights */
 span.highlighted {
-  color: #2990EA;
+  color: #4E78F1;
+}
+
+a.highlighted {
+  color: #4E78F1;
+}
+
+a.highlighted:hover {
+  color: #3A66E5;
 }
 
 /* ID Specific styles*/

@@ -13,15 +13,11 @@
     <link href="css/global.css" rel="stylesheet">
     <!-- Project -->
     <link href="css/experience.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <!-- Fakeloader -->
+    <link href="css/fakeLoader.css" rel="stylesheet">
   </head>
   <body>
+    <!-- <div id="fakeLoader"></div> -->
     <!-- Emoji Section -->
     <div class="container-fluid">
       <div class="row">
@@ -49,7 +45,7 @@
           <a href="index.html"><span class="highlighted">About</span></a>
         </li>
         <li>
-          <a href="project.html"><span class="highlighted">Projects</span></a>
+          <a href="project.html"><span class="highlighted" id="projects">Projects</span></a>
         </li>
         <li>
           <a href="experience.html"><span class="highlighted">Experience</span></a>
@@ -76,20 +72,72 @@
           <h2 id="coop">Co-op</h2>
 
           <!-- Universe -->
-          <h3 id="universe"><span class="highlighted">Universe</span></h3>
+          <h3 id="universe">
+            <span><a href="https://www.universe.com/" target="_blank" class="highlighted">Universe (Acquired by Ticketmaster)</a></span>
+          </h3>
+          <h4>Full Stack Developer</h4>
           <h5 id="date">April 2017 - September 2017</h5>
-          <p>I was part of a small agile team which focused on coming up with creative solutions for business teams. <br>During my time there, for the majority of my time, I worked on building a Web Application from scratch using React.js, Javascript, Bootstrap, HTML and CSS.<br>I also participated in a company hackathon where my team came up with an idea which won 1st place out of 9 teams and I created UIs with Sketch 3 and used InvisionApp to put together a demo.<br>I also learned formal agile methadologies through a dedicated agile coach and was part of a 3 day long workshop.</p>
+          <h5 id="location">Toronto, ON</h5>
+          <p>
+            I was a part of different "squads" at Universe. Squads were mini-teams of 5 that tackled different problems on a day to day basis.
+            <br />
+            <br />
+            I was exposed to a lot of amazing mentorship from fellow developers and senior engineers which helped me grow a lot from a technical aspect.
+          </p>
 
           <!-- Vidyard -->
           <!-- Put roles here? -->
-          <h3 id="vidyard"><span class="highlighted">Vidyard</span></h3>
+          <h3 id="vidyard">
+            <span><a href="https://www.vidyard.com/" target="_blank" class="highlighted">Vidyard</a></span>
+          </h3>
+          <h4>Software Developer</h4>
           <h5 id="date">September 2016 - December 2016</h5>
-          <p>I was part of a small agile team which focused on coming up with creative solutions for business teams. <br>During my time there, for the majority of my time, I worked on building a Web Application from scratch using React.js, Javascript, Bootstrap, HTML and CSS.<br>I also participated in a company hackathon where my team came up with an idea which won 1st place out of 9 teams and I created UIs with Sketch 3 and used InvisionApp to put together a demo.<br>I also learned formal agile methadologies through a dedicated agile coach and was part of a 3 day long workshop.</p>
+          <h5 id="location">Kitchener, ON</h5>
+          <p>
+            I was a part of the core product team at Vidyard.
+            <br />
+            <br />
+            During my time there, I learned a lot about Ruby on Rails, various Javascript frameworks and their respective best practices.
+            <br />
+            <br />
+            Vidyard implemented a very unique version of agile where I fixed existing bugs, and participated in daily code review with my peers.
+          </p>
 
           <!-- Amex -->
-          <h3 id="amex"><span class="highlighted">American Express</span></h3>
+          <h3 id="amex">
+            <span><a href="https://www.americanexpress.com/canada/" target="_blank" class="highlighted">American Express</a></span>
+          </h3>
+          <h4>Software Engineering Intern</h4>
           <h5 id="date">January 2016 - April 2016</h5>
-          <p>I was part of a small agile team which focused on coming up with creative solutions for business teams. <br>During my time there, for the majority of my time, I worked on building a Web Application from scratch using React.js, Javascript, Bootstrap, HTML and CSS.<br>I also participated in a company hackathon where my team came up with an idea which won 1st place out of 9 teams and I created UIs with Sketch 3 and used InvisionApp to put together a demo.<br>I also learned formal agile methadologies through a dedicated agile coach and was part of a 3 day long workshop.</p>
+          <h5 id="location">Toronto, ON</h5>
+          <p>
+            I was part of a small agile team which focused on coming up with creative solutions for business teams.
+            <br />
+            <br />
+            For the majority of my time there, I worked on building a web application from scratch using React, Node, Express, and Socket.io which ended up being demoed to the VP of marketing as well as other business leaders. I also designed and built out a front end careers page for the team I was part of to showcase our skillsets and utility.
+            <br />
+            <br />
+            For a company hackathon, my team and I came up with an idea which won 1st place out of 9 teams and was shown directly to the CIO of American Express. I created UI designs using Sketch 3 and leveraged InvisionApp to put together a demo.
+            Many of the engineers there were unfamiliar with a new tool like Sketch, therefore I also mentored and taught the others how to use the tool.
+            <br />
+            <br />
+            Lastly, I learned formal agile methadologies through a dedicated agile coach and participated in a 3 day long agile and SCRUM workshop.
+          </p>
+
+          <!-- Amex -->
+          <h3 id="makeschool">
+            <span><a href="https://www.makeschool.com/" target="_blank" class="highlighted">Make School (YCombinator 2012)</a></span>
+          </h3>
+          <h4>iOS Summer Academy Participant</h4>
+          <h5 id="date">June 2015 - August 2015</h5>
+          <h5 id="location">San Francisco, CA</h5>
+          <p>
+            I was lucky enough to be a participant of the Summer Academy at Makeschool.
+            <br /><br />
+            The goal was to invision an idea, and then design and build out that idea in only 2 months to release to the Apple app store.
+            <br /><br />
+            My idea that came to fruition was Tasky, a delightful to-do app which received 4000+ downloads just 4 months after release.
+          </p>
         </div>
       </div>
     </div>
@@ -106,5 +154,21 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+
+    <!-- Fake loader -->
+    <script src="js/fakeLoader.min.js"></script>
+
+    <script type="text/javascript">
+      $("#fakeLoader").fakeLoader({
+          timeToHide:2000, //Time in milliseconds for fakeLoader disappear
+          zIndex:999, // Default zIndex
+          spinner:"spinner7",//Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7'
+          bgColor:"#4E78F1", //Hex, RGB or RGBA colors
+      });
+
+      $("#projects").click(function() {
+        $('#fakeLoader').removeAttr('id');
+      });
+    </script>
   </body>
 </html>

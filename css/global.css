@@ -1,69 +1,67 @@
 /* Background Image */
 html, body {
   background-image: url('../images/backgroundShapes.svg');
+  -webkit-font-smoothing: antialiased;
 }
 
 /* Font Styles */
 @font-face {
-  font-family: "Brandon Text Regular";
-  src: url(../fonts/brandontextregular.ttf);
-}
-
-@font-face {
-  font-family: "Brandon Text Medium";
-  src: url(../fonts/brandontextmedium.ttf);
-}
-
-@font-face {
-  font-family: "Brandon Text Bold";
-  src: url(../fonts/brandontextbold.ttf);
+  font-family: "Camphor-Reg";
+  src: url(../fonts/CamphorPro-Regular.ttf);
 }
 
 /* End Font Styles */
-
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 8px;
+}
 /* Generic styles */
 h1 {
-  font-family: "Brandon Text Regular";
+  font-family: "Camphor-Reg";
+  font-weight: 400;
   color: #1C232B;
   font-size: 32px;
+  letter-spacing: .025em
 }
 
 h2 {
-  font-family: "Brandon Text Medium";
+  font-family: "Camphor-Reg";
   color: #1C232B;
-  font-size: 24px;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
 h3 {
-  font-family: "Brandon Text Medium";
+  font-family: "Camphor-Reg";
   color: #1C232B;
   font-size: 20px;
 }
 
 h4 {
-  font-family: "Brandon Text Medium";
+  font-family: "Camphor-Reg";
   color: #1C232B;
   font-size: 16px;
 }
 
 h5 {
-  font-family: "Brandon Text Medium";
+  font-family: "Camphor-Reg";
   color: #1C232B;
   font-size: 14px;
 }
 
 p {
-  font-family: "Brandon Text Regular";
+  font-family: "Camphor-Reg";
   color: #6F7881;
-  font-size: 16px;
-  line-height: 28px;
+  font-size: 17px;
+  line-height: 26px;
+  font-weight: 400;
 }
 
 li {
-  font-family: "Brandon Text Regular";
+  font-family: "Camphor-Reg";
   color: #6F7881;
   font-size: 16px;
-  line-height: 28px;
+  line-height: 26px;
 }
 
 ul {
@@ -78,14 +76,16 @@ nav ul {
 }
 
 nav ul li {
-  font-family: "Brandon Text Medium";
+  font-family: "Camphor-Reg";
   display: inline-block;
   padding: 0 0.8em 0 0.8em;
   text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: .375px;
 }
 
 footer section {
-  font-family: "Brandon Text Regular";
+  font-family: "Camphor-Reg";
   font-size: 16px;
   text-transform: uppercase;
   color: #1C232B;
@@ -145,7 +145,7 @@ a.highlighted:hover {
 }
 
 #nameTitle {
-  font-size: 48px;
+  font-size: 38px;
   margin-top: 3%;
 }
 

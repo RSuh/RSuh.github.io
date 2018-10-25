@@ -161,7 +161,7 @@ a.highlighted:hover {
 
 .site-footer {
   margin-top: 2em;
-  height: 110px;
+  height: 170px;
   background-color: #F5F5F5;
   padding: 0.1em 0;
   bottom: 0;
@@ -171,8 +171,22 @@ a.highlighted:hover {
   text-align: center;
 }
 
-#copyright {
-  margin-top: 2em;
+#email {
+  margin-top: 1em;
+  margin-bottom: 0;
+}
+
+#linkedin {
+  margin: 0;
+}
+
+#github {
+  margin: 0;
+  margin-bottom: 1em;
+}
+
+#vapor_shoutout {
+  margin-bottom: 0.5em;
 }
 
 @media only screen and (max-width: 750px) {
